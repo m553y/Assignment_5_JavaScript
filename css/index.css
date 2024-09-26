@@ -1,0 +1,175 @@
+body {
+  background-color: #f8f9fa;
+}
+
+
+
+.navbar .nav-link {
+  position: relative;
+}
+
+.navbar .nav-item .nav-link{
+  font-size: 16px;
+  margin-left: 20px;
+}
+
+.navbar .nav-link:hover::after,
+.navbar .nav-link.active::after {
+  content: "";
+  width: 100%;
+  height: 35px;
+  border-radius: 20px;
+  position: absolute;
+  left: 0;
+  transform: translateX(-50%);
+  top: 50%;
+  transform: translateY(-50%);
+  padding: 0 10px !important;
+}
+
+.navbar .nav-link:hover,
+.navbar .nav-link.active {
+  color: #0c3d4f !important;
+}
+
+.navbar-toggler{
+  height: 65px;
+  width: 55px;
+  border-radius: 40px !important;
+}
+
+.navbar-toggler:hover{
+  border-color: #009AD8 !important;
+}
+
+
+
+.navbar-toggler-icon {
+  width: 30px !important;
+}
+
+
+
+
+
+.hero-section {
+  background-image: url(../images/banner.png);
+  background-position: center;
+ 
+  min-height: 350px;
+  background-repeat: no-repeat;
+}
+
+.location-search {
+  position: relative;
+  width: 100%;
+}
+
+ input[type="text"] {
+  width: 100%;
+  padding: 15px 100px 15px 20px; 
+  background: #1e202b;
+  color: white;
+  border: none;
+  border-radius: 25px; 
+}
+
+ input[type="button"] {
+  position: absolute;
+  top: 50%;
+  right: 5px;
+  transform: translateY(-50%);
+  height: calc(100% - 10px); 
+  background: #333; 
+  color: white;
+  border: none;
+  border-radius: 25px;
+  padding: 0 30px;
+  cursor: pointer;
+}
+
+/* End Hero */
+
+
+/* Start Weather Section */
+.card {
+  background-color: #323544 !important;
+}
+
+.weather-container{
+  position: relative;
+  background-color: #1e202b !important;
+  height: fit-content;
+}
+.weather-cards {
+  position: relative;
+  bottom: 140px;
+}
+
+
+
+.second-card{
+  background-color: #262936 !important;
+}
+.second-card .card-header{
+  background-color: #222530 !important;
+}
+
+.current-temp {
+  font-size: 70px;
+  font-weight: 700;
+}
+
+.icon {
+  width: 50px;
+}
+
+.current-icon{
+  width: 80px;
+}
+.current-img{
+  width: 20px;
+  height: 20px;
+}
+
+/* End Weather Section */
+
+
+
+.footer{
+  background-color: #2D303D;
+  width: 100%;
+}
+
+
+
+.Icons .icon a {
+  color: #00f; 
+  font-size: 25px;
+}
+
+.Icons .icon {
+  width: 50px;
+  height: 50px;
+  background-color: rgba(255, 255, 255, 0.3);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: background-color 0.5s;
+}
+
+
+.Icons .icon:hover {
+  background-color: #074158;
+  
+}
+
+.Icons .icon:hover i{
+  color: white;
+}
+
+.Icon i {
+  color: #009AD8;
+}
+
